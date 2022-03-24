@@ -1,0 +1,774 @@
+/********* SUPER GENERAL *********/
+body {
+    margin: 0;
+    line-height: 1.4;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+li {
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*********  LANGUAGE *********/
+.languageVisible {
+    display: block;
+}
+.disabled {
+    display: none;
+}
+
+.rulesTable {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*********  FONTS AND TYPOGRAPHY *********/
+/*********  text padding includes *********/
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h1 {
+    padding: 0.6em;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+h2 {
+    padding-bottom: 0.8em;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.programos h2 {
+    padding: 1rem;
+}
+h3 {
+    letter-spacing: 1px;
+    font-size: 1.1 rem;
+}
+
+.stronger {
+    font-weight: 900;
+}
+
+#modal-header {
+    padding: 1em;
+    margin: 0;
+    /* border: springgreen 1px solid; */
+}
+
+.galery,
+.form,
+.main-footer,
+.dataCheckBox {
+    color: white;
+}
+
+.nav-list a {
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding: 0 5px;
+}
+
+.kontaktai a {
+    color: rgb(13, 69, 255);
+    font-size: 1em;
+}
+.kontaktai a:hover,
+.kontaktai a:focus,
+.dataCheckBox:hover,
+.dataCheckBox:focus {
+    color: rgb(157, 180, 255);
+    /* font-weight: 4000; */
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+.bodyControl {
+    font-weight: 400;
+    margin: 0;
+    line-height: 1;
+}
+
+.bodyControlLarge {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1;
+    padding-left: 20px;
+}
+
+.bodyControlSmall {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.1rem 0.3rem;
+    font-weight: 400;
+    font-size: 0.7em;
+    margin-left: -4px;
+}
+/*========END OF  FONTS AND TYPOGRAPHY ==========**/
+/* #alertText {
+    border: olivedrab solid 1px;
+} */
+
+.bodyControlImg img {
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* ****************** IMAGES ************** */
+.slider-image {
+    width: 100%;
+    height: 50vh;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+.prog-div,
+.programos-img,
+.slider-image,
+.gym-image-image,
+.pil-image-image,
+.tren-img {
+    border-radius: 10px;
+}
+.programos-img {
+    width: 90%;
+    object-fit: cover;
+    margin: 1rem auto;
+}
+
+.gym-image-image,
+.pil-image-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.gym-image-div,
+.pil-image-div {
+    width: 30%;
+}
+
+.gym-image-image:focus,
+.gym-image-image:hover,
+.pil-image-image:hover,
+.pil-image-image:focus {
+    box-shadow: 3px 5px 8px 5px rgba(194, 194, 194, 0.719);
+    cursor: pointer;
+}
+
+.main-header img {
+    height: 20px;
+    display: inline-block;
+}
+
+.gym-image-div,
+.pil-image-div,
+.slider-image,
+.triple-carousel-item-hidded {
+    display: none;
+}
+.main-content .carousel-item-visible,
+.triple-carousel-item-visible {
+    display: block;
+}
+
+.main-content .carousel-item-visible {
+    animation: slideAnimation 5s;
+    animation-fill-mode: both;
+}
+
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 00;
+    }
+}
+.programu-antraste,
+.slider-div {
+    width: 70%;
+}
+.programu-antraste {
+    /* border: #c26c1c solid 1px; */
+    /* text-align: center; */
+    margin: auto;
+}
+
+.box-item-right iframe {
+    box-shadow: 3px 5px 8px 5px rgba(77, 77, 77, 0.836);
+    width: 100%;
+}
+
+.main-footer img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+/*================ END OF IMAGES =============*/
+
+h1 span {
+    position: absolute;
+    top: -58px;
+}
+
+/* ****************** QUESTION FORM  ***********/
+.email-collector {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.email-collector textarea {
+    height: 120px;
+    resize: none;
+}
+
+.email-collector input,
+.email-collector textarea {
+    width: 40%;
+    font-family: inherit;
+    text-align: center;
+    padding: 0.5em 1em;
+    border: 1px solid #404040;
+    cursor: pointer;
+}
+.send-btn {
+    width: 20%;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 2em 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.email-collector input,
+.email-collector textarea,
+.send-btn {
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius: 8px;
+}
+
+input:focus,
+input:hover,
+.send-btn:hover,
+.send-btn:focus,
+textarea:hover,
+textarea:focus {
+    background-color: rgba(255, 255, 255, 0.829);
+}
+/*================ END OF FORM =============*/
+
+/* ****************** NAV BAR  ************** */
+.nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+    margin: 0;
+}
+
+.nav-list-actions:hover,
+.nav-list-actions:focus {
+    text-decoration-line: underline;
+    color: #2b5192;
+}
+
+.nav-list img:hover,
+.nav-list img:focus {
+    height: 21px;
+    text-decoration-line: none;
+}
+
+/*================ END OF NAV BAR  =============*/
+
+/* ****************** LAYOUT  ********************/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    /* border: #1bc023 solid 3px; */
+}
+.modal-body {
+    margin: 0 auto;
+}
+.m-container {
+    text-align: left;
+    max-width: 1100px;
+}
+.main-header {
+    position: sticky;
+    -webkit-sticky: -webkit-sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.main-content {
+    padding-bottom: 1.5em;
+}
+
+.box-item-left,
+.box-item-right,
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prog-div {
+    width: 48%;
+    background-color: rgb(199, 199, 199);
+    margin: 1rem auto;
+}
+.programu-blokas {
+    /* border: #c26c1c solid 3px; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-content,
+.programos,
+.galery,
+.coaches,
+.form,
+.pricess,
+.contacts {
+    position: relative;
+}
+
+.gym-pics,
+.pilates-pics {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 1em 0;
+}
+.pilates-pics {
+    padding-bottom: 3em;
+}
+
+.box-item-left,
+.box-item-right {
+    padding: 1em;
+    width: 40%;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.formButtonClass p {
+    color: red;
+    margin: 0;
+}
+#messageConfirmation {
+    color: greenyellow;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.padding-p {
+    padding: 0;
+    margin: 0;
+}
+
+.listItem {
+    line-height: 1.8;
+}
+
+.uzklausa,
+.kainos,
+.kontaktai {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-footer {
+    padding: 1em 0;
+}
+/********************** END OF LAYOUTS *************************/
+
+/********* BACKGROUNDS *********/
+.main-header {
+    background-color: rgb(197, 197, 197);
+}
+.main-content {
+    background-image: url("images/backgrounds/barca.jpg");
+}
+.galery {
+    background-image: url("images/backgrounds/dumbells.jpg");
+}
+.form {
+    background-image: url("images/backgrounds/wondering2.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pricess {
+    background-image: url("images/backgrounds/background-girl.jpg");
+}
+.contacts {
+    background-image: url("images/backgrounds/background-male2.jpg");
+}
+.main-footer {
+    background-color: black;
+}
+.main-content,
+.pricess,
+.contacts {
+    background-color: rgba(255, 252, 252, 0.897);
+    background-blend-mode: screen;
+}
+.galery,
+.form {
+    background-color: rgba(7, 7, 7, 0.685);
+    background-blend-mode: multiply;
+}
+.main-content,
+.galery,
+.pricess,
+.contacts {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main-content {
+    background-position: top;
+}
+/*================= END OF BACKGROUNDS =================*/
+
+/********************** BUTTONS *************************/
+
+.carousel-actions,
+.carousel-3-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-actions button,
+.carousel-3-actions button {
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.493);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.carousel-3-actions button:hover,
+.carousel-3-actions button:focus {
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+.single-slide-btn {
+    display: none;
+}
+
+/*=================== END OF BUTTONS =================*/
+
+/****************** SERVISE RULES MODAL ****************/
+.modal {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(248, 248, 248);
+    background-color: rgba(0, 0, 0, 0.781);
+    margin: 0 auto;
+}
+.modal-content {
+    background-color: #fefefe;
+    color: black;
+    margin: 0 auto;
+    padding: 1em;
+    padding-bottom: 4em;
+    border: black solid 1px;
+    width: 80%;
+    height: 90%;
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+    cursor: pointer;
+}
+/*============== END OF SERVISE RULES MODAL ==========*/
+
+/****************** Galery MODAL ****************/
+.g-Modal {
+    display: none;
+    position: fixed;
+    align-items: center;
+    z-index: 1;
+    padding-top: 80px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(248, 248, 248);
+    background-color: rgba(0, 0, 0, 0.781);
+    margin: 0 auto;
+}
+.gmodal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fefefe;
+    color: black;
+    margin: 0 auto;
+    padding: 0 1em;
+    padding-top: 1em; /* pridejau */
+    width: auto;
+    max-width: 900px;
+
+    max-height: 570px;
+
+    height: auto; /* buvo auto */
+
+    /* pics.style.objectFit = 'cover'
+    pics.style.height = '480px'
+    pics.style.width = '100%' */
+
+    /* width: 100%;
+    object-fit: cover;
+    height: 480px; */
+}
+
+.gmodal-content {
+    animation: fadeVisibility 0.8s;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.gclose {
+    color: #aaaaaa;
+
+    float: right;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.gclose:hover,
+.gclose:focus {
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+    cursor: pointer;
+}
+.show-Modal {
+    display: block;
+}
+.hide-Modal {
+    display: none;
+}
+
+/*============== END OF Galery MODAL ==========*/
+
+/* _________________ Thank you page____________  */
+
+.thank-you {
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+    margin: 4rem auto;
+    max-width: 600px;
+    width: 40%;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.thank-you img {
+    border-radius: 10px;
+}
+
+.thank-you-btn {
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+    background-color: rgb(221, 221, 221);
+    font-weight: bold;
+}
+
+.thank-you h3 {
+    margin: 1rem;
+}
+
+/********************** @ MEDIA *************************/
+@media (max-width: 600px) {
+    .programu-blokas,
+    .gym-pics,
+    .pilates-pics,
+    .uzklausa,
+    .kainos,
+    .kontaktai {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gym-pics .gym-image-div,
+    .gym-pics .carousel-item-hidden,
+    .pilates-pics .pil-image-div,
+    .pilates-pics .carousel-item-hidden {
+        display: none;
+    }
+
+    .gym-pics .carousel-item-visible,
+    .pilates-pics .carousel-item-visible,
+    .slider-image .carousel-item-visible {
+        display: block;
+    }
+    .prog-div,
+    .gym-pics .gym-image-div,
+    .pilates-pics .pil-image-div {
+        width: 94%;
+        max-width: 600px;
+        height: auto;
+    }
+    .programu-antraste,
+    .slider-div {
+        width: 90%;
+    }
+    .slider-image {
+        height: 250px;
+        width: 100%;
+    }
+
+    .gym-image-image:focus,
+    .gym-image-image:hover,
+    .pil-image-image:hover,
+    .pil-image-image:focus {
+        box-shadow: none;
+        cursor: auto;
+    }
+
+    /***** in media BUTTONS ***/
+    .single-slide-btn {
+        display: block;
+    }
+    .slide-3-btn {
+        display: none;
+    }
+    .carousel-actions {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .carousel-actions button {
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.493);
+        border: 0;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+    .carousel-actions button:hover,
+    .carousel-actions button:hover {
+        font-size: 1.5rem;
+        background-color: rgba(255, 255, 255, 0.815);
+    }
+    /*== END OF in media BUTTONS =*/
+
+    .main-content,
+    .pricess {
+        background-position: left;
+    }
+
+    .box-item-left,
+    .box-item-right {
+        width: 80%;
+    }
+
+    .email-collector input,
+    .email-collector textarea {
+        width: 80%;
+    }
+
+    .nav-list {
+        justify-content: space-between;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 3;
+        grid-template-columns: repeat(3, max-content);
+        gap: 0.2em;
+        padding: 0.2em 2em;
+    }
+
+    .nav-list-flags {
+        padding: 0.8em 0.15em 0.2em;
+        margin: 0;
+        /* border: #1bc023 solid 1px; */
+    }
+
+    .programos h2 {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    h1 span {
+        position: absolute;
+        top: -80px;
+    }
+    .list-flags {
+        /* width: 100%; */
+        border: #1bc023 solid 1px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .thank-you {
+        width: 70%;
+        padding: 2rem;
+    }
+}
+/*=================== END OF MEDIA =================*/
