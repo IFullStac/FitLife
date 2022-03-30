@@ -53,9 +53,12 @@ h2 {
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
+.programos p,
 .programos h2 {
     padding: 1rem;
+    margin: 0;
 }
+
 h3 {
     letter-spacing: 1px;
     font-size: 1.1 rem;
@@ -68,7 +71,6 @@ h3 {
 #modal-header {
     padding: 1em;
     margin: 0;
-    /* border: springgreen 1px solid; */
 }
 
 .galery,
@@ -95,7 +97,6 @@ h3 {
 .dataCheckBox:hover,
 .dataCheckBox:focus {
     color: rgb(157, 180, 255);
-    /* font-weight: 4000; */
     text-decoration: underline;
     letter-spacing: 1px;
 }
@@ -123,9 +124,6 @@ h3 {
     margin-left: -4px;
 }
 /*========END OF  FONTS AND TYPOGRAPHY ==========**/
-/* #alertText {
-    border: olivedrab solid 1px;
-} */
 
 .bodyControlImg img {
     height: 150px;
@@ -152,7 +150,7 @@ h3 {
 .programos-img {
     width: 90%;
     object-fit: cover;
-    margin: 1rem auto;
+    margin: 0 auto;
 }
 
 .gym-image-image,
@@ -235,7 +233,7 @@ h3 {
 
 h1 span {
     position: absolute;
-    top: -58px;
+    top: -55px;
 }
 
 /* ****************** QUESTION FORM  ***********/
@@ -315,7 +313,10 @@ textarea:focus {
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    /* border: #1bc023 solid 3px; */
+}
+
+section {
+    padding: 30px 0;
 }
 .modal-body {
     margin: 0 auto;
@@ -344,14 +345,17 @@ textarea:focus {
 }
 
 .prog-div {
-    width: 48%;
+    width: 45%;
     background-color: rgb(199, 199, 199);
-    margin: 1rem auto;
+    margin: 2rem auto;
 }
+
 .programu-blokas {
-    /* border: #c26c1c solid 3px; */
     display: flex;
     justify-content: space-evenly;
+}
+.form-link {
+    margin-top: 1rem;
 }
 
 .main-content,
@@ -377,10 +381,23 @@ textarea:focus {
 
 .box-item-left,
 .box-item-right {
+    /* border: #1bc023 1px solid; */
     padding: 1em;
-    width: 40%;
+    /* width: 40%; */
+    width: 45%;
     margin-bottom: 1em;
     text-align: center;
+}
+.programos h2 {
+    /* border: #1bc023 1px solid; */
+    min-height: 55px;
+}
+
+.kainos h2,
+ul {
+    padding: 0;
+
+    list-style-type: none;
 }
 
 .formButtonClass p {

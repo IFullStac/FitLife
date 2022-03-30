@@ -1,514 +1,1119 @@
 <!DOCTYPE html>
 <html lang="lt-LT">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitLife</title>
-    <link href="style.css" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap"
+            rel="stylesheet"
+            crossorigin="anonymous"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FitLife</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
 
-<body id="main-body">
+    <body id="main-body">
+        <!-- *********** NAVIGACIJA ************-->
+        <nav class="main-header container" id="myHeader">
+            <ul class="nav-list">
+                <li class="LT languageVisible">
+                    <a class="nav-list-actions" href="#main-content-H1-lt"
+                        >apie mus</a
+                    >
+                </li>
+                <li class="LT languageVisible">
+                    <a class="nav-list-actions" href="#programos-H1-lt"
+                        >programos</a
+                    >
+                </li>
+                <li class="LT languageVisible">
+                    <a class="nav-list-actions" href="#galery-H1-lt"
+                        >galerija</a
+                    >
+                </li>
+                <li class="LT languageVisible">
+                    <a class="nav-list-actions" href="#pricess-H1-lt">kainos</a>
+                </li>
+                <li class="LT languageVisible">
+                    <a class="nav-list-actions" href="#form-H1-lt">užklausa</a>
+                </li>
+                <li class="LT languageVisible">
+                    <a class="nav-list-actions" href="#contacts-H1-lt"
+                        >kontaktai</a
+                    >
+                </li>
 
-    <!-- *********** NAVIGACIJA ************-->
-    <nav class="main-header container" id="myHeader"> 
-       <ul class="nav-list ">
-           <li class="LT languageVisible"> <a class="nav-list-actions" href="#main-content-H1-lt">apie mus</a></li>
-           <li class="LT languageVisible"> <a class="nav-list-actions" href="#programos-H1-lt">programos</a></li>
-           <li class="LT languageVisible"> <a class="nav-list-actions" href="#galery-H1-lt">galerija</a></li>
-           <li class="LT languageVisible"> <a class="nav-list-actions" href="#pricess-H1-lt">kainos</a></li>
-           <li class="LT languageVisible"> <a class="nav-list-actions" href="#form-H1-lt">užklausa</a></li>
-           <li class="LT languageVisible"> <a class="nav-list-actions" href="#contacts-H1-lt">kontaktai</a></li>
-           
-           <li class="EN disabled"> <a class="nav-list-actions" href="#main-content-H1-en">Home</a></li>
-           <li class="EN disabled"> <a class="nav-list-actions" href="#programos-H1-en">programs</a></li>
-           <li class="EN disabled"> <a class="nav-list-actions" href="#galery-H1-en">galery</a></li> 
-           <li class="EN disabled"> <a class="nav-list-actions" href="#pricess-H1-en">prices</a></li>
-           <li class="EN disabled"> <a class="nav-list-actions" href="#form-H1-en">inquiry</a></li>
-           <li class="EN disabled"> <a class="nav-list-actions" href="#contacts-H1-en">contacts</a></li>
-           
-           <li class="RU disabled"> <a class="nav-list-actions" href="#main-content-H1-ru">о нас</a></li>
-           <li class="RU disabled"> <a class="nav-list-actions" href="#programos-H1-ru">программы</a></li>
-           <li class="RU disabled"> <a class="nav-list-actions" href="#galery-H1-ru">галерея</a></li> 
-           <li class="RU disabled"> <a class="nav-list-actions" href="#pricess-H1-ru">Цены</a></li>
-           <li class="RU disabled"> <a class="nav-list-actions" href="#form-H1-ru">запрос</a></li>
-           <li class="RU disabled"> <a class="nav-list-actions" href="#contacts-H1-ru">контакты</a></li>
+                <li class="EN disabled">
+                    <a class="nav-list-actions" href="#main-content-H1-en"
+                        >Home</a
+                    >
+                </li>
+                <li class="EN disabled">
+                    <a class="nav-list-actions" href="#programos-H1-en"
+                        >programs</a
+                    >
+                </li>
+                <li class="EN disabled">
+                    <a class="nav-list-actions" href="#galery-H1-en">galery</a>
+                </li>
+                <li class="EN disabled">
+                    <a class="nav-list-actions" href="#pricess-H1-en">prices</a>
+                </li>
+                <li class="EN disabled">
+                    <a class="nav-list-actions" href="#form-H1-en">inquiry</a>
+                </li>
+                <li class="EN disabled">
+                    <a class="nav-list-actions" href="#contacts-H1-en"
+                        >contacts</a
+                    >
+                </li>
 
-           <li> <a id="LT-FLAG" class="nav-list-flags" href="#" > <img src="images/general/lt-flag.png" alt="Lt flag"> </a> </li>
-            <li> <a id="EN-FLAG" class="nav-list-flags" href="#" > <img src="images/general/uk-flag.png" alt="UK flag"> </a> </li>
-            <li> <a id="RU-FLAG" class="nav-list-flags" href="#" > <img src="images/general/ru-flag.png" alt="Ru flag"> </a> </li>
-        </ul>
-    </nav> 
+                <li class="RU disabled">
+                    <a class="nav-list-actions" href="#main-content-H1-ru"
+                        >о нас</a
+                    >
+                </li>
+                <li class="RU disabled">
+                    <a class="nav-list-actions" href="#programos-H1-ru"
+                        >программы</a
+                    >
+                </li>
+                <li class="RU disabled">
+                    <a class="nav-list-actions" href="#galery-H1-ru">галерея</a>
+                </li>
+                <li class="RU disabled">
+                    <a class="nav-list-actions" href="#pricess-H1-ru">Цены</a>
+                </li>
+                <li class="RU disabled">
+                    <a class="nav-list-actions" href="#form-H1-ru">запрос</a>
+                </li>
+                <li class="RU disabled">
+                    <a class="nav-list-actions" href="#contacts-H1-ru"
+                        >контакты</a
+                    >
+                </li>
 
-    <!-- <li> <a id="LT-FLAG" class="nav-list-flags" href="#" > <img src="images/general/lt-flag.png" alt="Lt flag"> </a> 
-        <a id="EN-FLAG" class="nav-list-flags" href="#" > <img src="images/general/uk-flag.png" alt="UK flag"> </a>
-        <a id="RU-FLAG" class="nav-list-flags" href="#" > <img src="images/general/ru-flag.png" alt="Ru flag"> </a>
-    </li> -->
+                <li>
+                    <a id="LT-FLAG" class="nav-list-flags" href="#">
+                        <img src="images/general/lt-flag.png" alt="Lt flag" />
+                    </a>
+                </li>
+                <li>
+                    <a id="EN-FLAG" class="nav-list-flags" href="#">
+                        <img src="images/general/uk-flag.png" alt="UK flag" />
+                    </a>
+                </li>
+                <li>
+                    <a id="RU-FLAG" class="nav-list-flags" href="#">
+                        <img src="images/general/ru-flag.png" alt="Ru flag" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <!-- *********** STRAIPSNIS/APRASYMAS ************-->
+        <!-- *********** STRAIPSNIS/APRASYMAS ************-->
 
-    <section class="main-content container " id="main-content">   
-        <h1 class="LT languageVisible" > Sveiki atvykę į FitLife <span id="main-content-H1-lt"></span></h1>
-        <h1 class="EN disabled"> welcome to FitLife <span id="main-content-H1-en"></span></h1>
-        <h1 class="RU disabled">Добро пожаловать в FitLife<span id="main-content-H1-ru"></span></h1>
+        <section class="main-content container" id="main-content">
+            <h1 class="LT languageVisible">
+                Sveiki atvykę į FitLife <span id="main-content-H1-lt"></span>
+            </h1>
+            <h1 class="EN disabled">
+                welcome to FitLife <span id="main-content-H1-en"></span>
+            </h1>
+            <h1 class="RU disabled">
+                Добро пожаловать в FitLife<span id="main-content-H1-ru"></span>
+            </h1>
 
-        <div class="slider-div ">
+            <div class="slider-div">
+                <h2 class="LT languageVisible">
+                    Kineziterapijos ir sporto studiją
+                </h2>
+                <h2 class="EN disabled">
+                    Kinesitherotherapy and fitness studio
+                </h2>
+                <h2 class="RU disabled">студия kинезитерапии и спорта</h2>
 
-            <h2 class="LT languageVisible"> Kineziterapijos ir sporto studiją </h2>
-            <h2 class="EN disabled"> Kinesitherotherapy and fitness studio </h2>
-            <h2 class="RU disabled">студия kинезитерапии и спорта</h2>
+                <img
+                    class="slider-image carousel-item-visible"
+                    src="images/mainSlide/logoFITLIFE.jpg"
+                    alt="fitlife logo"
+                />
+                <img
+                    class="slider-image"
+                    src="images/general/bodyControl.jpeg"
+                    alt="body control pilates logo "
+                />
+                <img
+                    class="slider-image"
+                    src="images/mainSlide/slide1.JPG"
+                    alt="people working out "
+                />
+                <img
+                    class="slider-image"
+                    src="images/mainSlide/slide2.JPG"
+                    alt="people working out"
+                />
+                <img
+                    class="slider-image"
+                    src="images/mainSlide/slide3.JPG"
+                    alt="people working out "
+                />
+                <img
+                    class="slider-image"
+                    src="images/mainSlide/slide4.JPG"
+                    alt="people working out"
+                />
+                <img
+                    class="slider-image"
+                    src="images/mainSlide/slide5.JPG"
+                    alt="people working out"
+                />
 
-            <img class="slider-image carousel-item-visible" src="images/mainSlide/logoFITLIFE.jpg" alt="fitlife logo">
-            <img class="slider-image " src="images/general/bodyControl.jpeg" alt="body control pilates logo ">
-            <img class="slider-image " src="images/mainSlide/slide1.JPG" alt="people working out ">
-            <img class="slider-image " src="images/mainSlide/slide2.JPG" alt="people working out">
-            <img class="slider-image " src="images/mainSlide/slide3.JPG" alt="people working out ">
-            <img class="slider-image " src="images/mainSlide/slide4.JPG" alt="people working out"> 
-            <img class="slider-image " src="images/mainSlide/slide5.JPG" alt="people working out">  
+                <p class="LT languageVisible">
+                    Jei esate žmogus, kuris ieško aukščiausio lygio paslaugų,
+                    jei esate žmogus, kuriam reikia išskirtinumo bei kokybės,
+                    tuomet FitLife sporto ir kineziterapijos studija yra kaip
+                    tik jums, nes čia mes remiamės šiais esminiais sporto ir
+                    sveikatingumo principais: svarbiausia - teisingas judesys,
+                    gera nuotaika sportuojant ir trenerio supratimas apie
+                    kiekvieno žmogaus poreikius ir galimybes. <br />
+                    Sporto kokybę mūsų klube užtikrina geriausi Itališki
+                    treniruokliai iš Technogym bei ilgametę patirtį turintis
+                    treneris kineziterapeutas. Sportuojant pas mus, jums
+                    nereikės laukt prie treniruoklių ar jaustis minioje, nes
+                    treniruotės vyksta tik su asmeneniu treneriu iš anksto
+                    sutartu laiku. <br />
+                    <span class="stronger">
+                        Susidomėjote?
+                        <a href="#form-H1-lt">Spauskite čia </a>
+                    </span>
+                </p>
 
+                <p class="EN disabled">
+                    If you are a person looking for the highest level of
+                    service, if you are a person who needs exclusivity and
+                    quality, then FitLife fitness and physiotherapy studio is
+                    just for you because here we are following essential
+                    principles of sport and health: the most important thing is
+                    the correct movement, good mood and a coach’s understanding
+                    of each person’s needs and capabilities.<br />
+                    The quality in our club is ensured by the best Italian
+                    equipment from Technogym and a physiotherapist with many
+                    years of experience. While workingout in our studio you will
+                    not have to wait around to use exercise machines or feel
+                    crowded because the trainings take place only with a
+                    personal trainer at a pre-arranged time. <br />
+                    <span class="stronger">
+                        Interested?
+                        <a href="#form-H1-en">Send an inquiry </a>
+                    </span>
+                </p>
 
-            <p class="LT languageVisible"> Jei esate žmogus, kuris ieško aukščiausio lygio paslaugų, jei esate žmogus, kuriam reikia išskirtinumo bei kokybės,
-                 tuomet FitLife sporto ir kineziterapijos studija yra kaip tik jums, nes čia mes remiamės šiais esminiais sporto ir sveikatingumo principais: svarbiausia - teisingas judesys,
-                 gera nuotaika sportuojant ir trenerio supratimas apie kiekvieno žmogaus poreikius ir galimybes. <br>
-                Sporto kokybę mūsų klube užtikrina geriausi Itališki treniruokliai iš Technogym bei ilgametę patirtį turintis treneris kineziterapeutas.
-                Sportuojant pas mus, jums nereikės laukt prie treniruoklių ar jaustis minioje, nes treniruotės vyksta tik su asmeneniu treneriu iš anksto sutartu laiku. <br>
-                <span class="stronger"> Susidomėjote? <br></span> Galite susisiekti su mumis dėl nemokamos konsultacijos: info@fitlife.lt </p>
-
-            <p class="EN disabled"> If you are a person looking for the highest level of service, 
-                if you are a person who needs exclusivity and quality, then FitLife fitness and physiotherapy studio is just for you
-                 because here we are following essential principles of sport and health: the most important thing is the correct movement,
-                  good mood and a coach’s understanding of each person’s needs and capabilities.<br>
-                The quality in our club is ensured by the best Italian equipment from Technogym and a physiotherapist with many years of experience.
-                While workingout in our studio you will not have to wait around to use exercise machines or feel crowded
-                 because the trainings take place only with a personal trainer at a pre-arranged time. <br>
-                <span class="stronger"> Interested? <br></span> You can contact us for a free consultation: info@fitlife.lt </p>
-
-
-            <p class="RU disabled">Если вы человек, ищущий услуги высочайшего уровня, если вы человек, которому нужна эксклюзивность и качество,
-                 то FitLife Sports and Physiotherapy Studio как раз для вас, потому что здесь мы основываемся на следующих основных принципах спорта
-                  и здоровья: самое главное - правильное движение, хорошее настроение в спорте и понимание тренером потребностей и возможностей 
-                  каждого человека.<br>
-                Качество занятий спортом в нашем клубе обеспечивают лучшие итальянские тренажеры Technogym и физиотерапевт с многолетним опытом.
-                Занимаясь спортом с нами, вам не придется ждать тренировки или чувствовать себя в толпе, потому что тренировка
-                 проходит только с личным тренером в заранее оговоренное время.<br>
-                <span class="stronger" > Заинтересованы? <br></span> Вы можете связаться с нами для получения бесплатной консультации: info@fitlife.lt</p>
-
-        </div>     
-    </section>
-
-    <section class="programos container"> 
-        <div class="programu-antraste">
-            <h1 class="LT languageVisible">Treniruočių programos<span id="programos-H1-lt"> </span></h1>
-            <h1 class="EN disabled"><span id="programos-H1-en"> </span> Training programs</h1>
-            <h1 class="RU disabled"><span id="programos-H1-ru"> </span> ОБУЧАЮЩИЕ ПРОГРАММЫ</h1>
-
-            <p class="LT languageVisible"> Norėdami patenkinti į mus besikreipiančių žmonių norus, kurie yra gana įvairūs, bet turintys bendrą tikslą būti sveikam, mes siūlome keturias treniruočių programas, kurios maksimaliai garantuotų tų norų realizavimą </p>
-            <p class="EN disabled"> To satisfy the desires of people who turn to us, who are quite diverse, but have a common goal to be healthy, we offer four training programs that will maximally guarantee the realization of those desires. </p>
-            <p class="RU disabled"> Для удовлетворения желаний обращающихся к нам людей, которые достаточно разнообразны, но имеют общую цель быть здоровыми, мы предлагаем четыре программы тренировок, которые максимально гарантируют реализацию этих желаний. </p>
-        </div>
-
-        <div class="programu-blokas"> 
-
-            <div class="prog-div">
-                <h2 class="LT languageVisible">atraminio-judamojo aparato gydymas ir profilaktika</h2>
-                <h2 class="EN disabled">treatment and prevention of musculoskeletal system</h2>
-                <h2 class="RU disabled">лечение и профилактика опорно-двигательного аппарата</h2>
-                
-                <img  src="images/mainSlide/slide1.JPG" alt="sporto sale su iranga" class="programos-img" >
+                <p class="RU disabled">
+                    Если вы человек, ищущий услуги высочайшего уровня, если вы
+                    человек, которому нужна эксклюзивность и качество, то
+                    FitLife Sports and Physiotherapy Studio как раз для вас,
+                    потому что здесь мы основываемся на следующих основных
+                    принципах спорта и здоровья: самое главное - правильное
+                    движение, хорошее настроение в спорте и понимание тренером
+                    потребностей и возможностей каждого человека.<br />
+                    Качество занятий спортом в нашем клубе обеспечивают лучшие
+                    итальянские тренажеры Technogym и физиотерапевт с
+                    многолетним опытом. Занимаясь спортом с нами, вам не
+                    придется ждать тренировки или чувствовать себя в толпе,
+                    потому что тренировка проходит только с личным тренером в
+                    заранее оговоренное время.<br />
+                    <span class="stronger">
+                        Заинтересованы?
+                        <a href="#form-H1-ru">Нажмите здесь </a>
+                    </span>
+                </p>
             </div>
-            <div class="prog-div">
-                <h2 class="LT languageVisible">bendrojo fizinio pasirengimo gerinimas</h2>
-                <h2 class="EN disabled">improving general physical fitness</h2>
-                <h2 class="RU disabled">улучшение общей физической подготовки</h2>
-                
-                <img  src="images/mainSlide/slide2.JPG" alt="sporto sale su iranga" class="programos-img" >
-            </div>
-        </div>
-        
-        <div class="programu-blokas"> 
-            <div class="prog-div">
-                <h2 class="LT languageVisible">kūno svorio ir apimčių korekcija</h2>
-                <h2 class="EN disabled">correction of body weight and volume</h2>
-                <h2 class="RU disabled">коррекция массы тела и объема</h2>
-                
-                <img  src="images/mainSlide/slide3.JPG" alt="sporto sale su iranga" class="programos-img" >
-            </div>
-            <div class="prog-div">
-                <h2 class="LT languageVisible">body control pilates treniruotės</h2>
-                <h2 class="EN disabled">body control pilates workouts</h2>
-                <h2 class="RU disabled">тренировки по пилатесу с контролем тела</h2>
-                
-                <img  src="images/mainSlide/slide2.JPG" alt="sporto sale su iranga" class="programos-img" >
-            </div>
-        </div>
-    </section>
+        </section>
 
+        <section class="programos container">
+            <div class="programu-antraste">
+                <h1 class="LT languageVisible">
+                    Treniruočių programos<span id="programos-H1-lt"> </span>
+                </h1>
+                <h1 class="EN disabled">
+                    <span id="programos-H1-en"> </span> Training programs
+                </h1>
+                <h1 class="RU disabled">
+                    <span id="programos-H1-ru"> </span> ОБУЧАЮЩИЕ ПРОГРАММЫ
+                </h1>
 
-<!-- ***********GALERIJA ************-->
-<section class="galery container" id="galery" >
+                <p class="LT languageVisible">
+                    Norėdami patenkinti į mus besikreipiančių žmonių norus,
+                    kurie yra gana įvairūs, bet turintys bendrą tikslą būti
+                    sveikam, mes siūlome keturias treniruočių programas, kurios
+                    maksimaliai garantuotų tų norų realizavimą
+                </p>
 
-    <h1 class="LT languageVisible" ><span id="galery-H1-lt"> </span> galerija</h1>
-    <h1 class="EN disabled"><span id="galery-H1-en"> </span> galery</h1>
-    <h1 class="RU disabled"><span id="galery-H1-ru"> </span> галерея</h1>
-
-    <h2 class="LT languageVisible">Sporto salė</h2>
-    <h2 class="EN disabled">Gym</h2>
-    <h2 class="RU disabled" >Спортзал</h2>
-
-    <div class="gym-pics">
-            <!--***** PICTURES *******-->
-
-        <div   class="gym-image-div carousel-item-visible triple-carousel-item-visible">
-            <img src="images/sportoSale/1.jpg" alt="pagrindine sale su kinesi treniruokliu bei svoriais" class="gym-image-image" >
-        </div>
-        <div    class="gym-image-div triple-carousel-item-visible">
-            <img  src="images/sportoSale/2.jpg" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-        <div  class="gym-image-div triple-carousel-item-visible">
-            <img  src="images/sportoSale/3.jpg" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-
-        <div class="gym-image-div">
-            <img src="images/sportoSale/4.jpg" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-        <div  class="gym-image-div">
-            <img src="images/sportoSale/5.jpg" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-        <div  class="gym-image-div">
-            <img src="images/sportoSale/6.jpg" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-
-        <div class="gym-image-div">
-            <img src="images/sportoSale/7.jpg" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-        <div  class="gym-image-div">
-            <img src="images/sportoSale/8.jpg" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-
-        <div  class="gym-image-div">
-            <img src="images/sportoSale/legPress.JPG" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-
-        <div  class="gym-image-div">
-            <img src="images/sportoSale/steperiai.JPG" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-
-        <div  class="gym-image-div">
-            <img src="images/sportoSale/9.jpg" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-
-        <div  class="gym-image-div">
-            <img src="images/sportoSale/10.jpg" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-
-        <div  class="gym-image-div">
-            <img src="images/sportoSale/irklavimas1.JPG" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-        <div  class="gym-image-div">
-            <img src="images/sportoSale/irklavimas2.JPG" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-
-        <div  class="gym-image-div">
-            <img src="images/sportoSale/takelisIrDviratis.JPG" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-
-        <div  class="gym-image-div">
-            <img src="images/sportoSale/elipsiniai1.JPG" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-        <div  class="gym-image-div">
-            <img src="images/sportoSale/elipsiniai2.JPG" alt="sporto sale su iranga" class="gym-image-image" >
-        </div>
-
-        <!--***** MODAL PROTOTYPE *******-->
-        <div class="g-Modal" id="gModal">  <!--*** modals**-->
-            <!-- <div class="gmodal-content">   // modalDiv 
-                <img src="images/1.jpg" > // pics
-                <div class= "carousel-actions" >  // buttonDiv
-                    <button id="carousel-button-prev" aria-label="Previous Slide"><</button>  // buttonNext
-                    <button id="carousel-button-next" aria-label="Next Slide">></button> // buttonPrev
-                </div> 
-                <span class="gclose">&times;</span> // spans
-            </div> -->
-        </div>    
-
-            <!--***** BUTTONS *******-->
-        <div class="carousel-actions single-slide-btn">
-            <button id="carousel-button-prev" aria-label="Previous Slide"><</button>
-            <button id="carousel-button-next" aria-label="Next Slide">></button>
-        </div>
-
-        <div class="carousel-3-actions slide-3-btn">
-            <button id="carousel-3-button1-prev" aria-label="Previous Slide"><</button>
-            <button id="carousel-3-button1-next" aria-label="Next Slide">></button>
-        </div>
-
-    </div>
-    
-    <!-- <h2 class="LT languageVisible"><span class="bodyControl"> body control</span>
-        <br><span class="bodyControlLarge"> pilates</span>
-        <span class="bodyControlSmall">r </span> </h2>
-
-
-    <h2 class="EN disabled"> Pilates studio </h2>
-    <h2 class="RU disabled">Студия пилатеса</h2> -->
-
-
-    <h2> <span class="bodyControl"> body control</span>
-        <br><span class="bodyControlLarge"> pilates</span>
-        <span class="bodyControlSmall">r </span> </h2>
-
-
-    <div class="pilates-pics" >
-        
-            <div  class="pil-image-div carousel-item-visible triple-carousel-item-visible ">
-                <img src="images/pilatesStudija/pilSlide1.JPG" alt="pilates sale su iranga" class="pil-image-image" >
-            </div>
-            <div  class="pil-image-div triple-carousel-item-visible ">
-                <img src="images/pilatesStudija/pilSlide2.JPG" alt="pilates sale su iranga" class="pil-image-image" >
-            </div>
-            <div  class="pil-image-div triple-carousel-item-visible ">
-                <img src="images/pilatesStudija/pil13.jpg" alt="pilates sale su iranga" class="pil-image-image" >
-            </div>
-       
-            <div  class="pil-image-div">
-                <img src="images/pilatesStudija/pil11.jpg" alt="pilates sale su iranga" class="pil-image-image" >
-            </div>
-            <div  class="pil-image-div">
-                <img src="images/pilatesStudija/pil12.jpg" alt="pilates sale su iranga" class="pil-image-image" >
+                <p class="EN disabled">
+                    To satisfy the desires of people who turn to us, who are
+                    quite diverse, but have a common goal to be healthy, we
+                    offer four training programs that will maximally guarantee
+                    the realization of those desires.
+                </p>
+                <p class="RU disabled">
+                    Для удовлетворения желаний обращающихся к нам людей, которые
+                    достаточно разнообразны, но имеют общую цель быть здоровыми,
+                    мы предлагаем четыре программы тренировок, которые
+                    максимально гарантируют реализацию этих желаний.
+                </p>
             </div>
 
-        
-        
-        <div class="carousel-actions single-slide-btn">
-            <button id="carousel-button2-prev" aria-label="Previous Slide"><</button>
-            <button id="carousel-button2-next" aria-label="Next Slide">></button>
-        </div>
+            <div class="programu-blokas">
+                <div class="prog-div">
+                    <h2 class="LT languageVisible">
+                        atraminio-judamojo aparato gydymas ir profilaktika
+                    </h2>
+                    <h2 class="EN disabled">
+                        treatment and prevention of musculoskeletal system
+                    </h2>
+                    <h2 class="RU disabled">
+                        лечение и профилактика опорно-двигательного аппарата
+                    </h2>
 
-        <div class="carousel-3-actions slide-3-btn">
-            
-            <button id="carousel-3-button2-prev" aria-label="Previous Slide"><</button>
-            <button id="carousel-3-button2-next" aria-label="Next Slide">></button>
-            
-        </div>
-    </div>
+                    <img
+                        src="images/mainSlide/slide1.JPG"
+                        alt="sporto sale su iranga"
+                        class="programos-img"
+                    />
+                    <p class="LT languageVisible">
+                        Esame parinkę ir pritaikę specializuotų pratimų rinkinį,
+                        kurie padeda žmogui atsikratyti įvairių negalavimų,
+                        siejamų su stuburo ir sąnarių (įskaitant klubo) funkcijų
+                        sutrikimais. <br />
+                        <a
+                            class="LT languageVisible form-link"
+                            href="#form-H1-lt"
+                            >Siųsti užklausą
+                        </a>
+                    </p>
+                    <p class="EN disabled">
+                        We have also selected a set of specialized exercises to
+                        help a person get rid of various ailments associated
+                        with spinal and joint (including hip) disorders. <br />
+                        <a class="EN disabled form-link" href="#form-H1-en"
+                            >Send an inquiry
+                        </a>
+                    </p>
+                    <p class="RU disabled">
+                        Также мы подобрали комплекс специализированных
+                        упражнений, помогающих человеку избавиться от различных
+                        недугов, связанных с поражением позвоночника и суставов
+                        (в том числе тазобедренных). <br />
+                        <a class="RU disable form-link" href="#form-H1-ru"
+                            >Oтправить слышит
+                        </a>
+                    </p>
+                </div>
+                <div class="prog-div">
+                    <h2 class="LT languageVisible">
+                        bendrojo fizinio pasirengimo gerinimas
+                    </h2>
+                    <h2 class="EN disabled">
+                        improving general physical fitness
+                    </h2>
+                    <h2 class="RU disabled">
+                        улучшение общей физической подготовки
+                    </h2>
 
-</section>
+                    <img
+                        src="images/mainSlide/slide5.JPG"
+                        alt="sporto sale su iranga"
+                        class="programos-img"
+                    />
 
+                    <p class="LT languageVisible">
+                        Ši programa pritaikyta kiekvienam, nesvarbu, ar tai
+                        pirmi žmogaus žingsniai sporto klube, ar tai aukštojo
+                        sportinio meistriškumo atstovas. <br />
+                        <a
+                            class="LT languageVisible form-link"
+                            href="#form-H1-lt"
+                            >Siųsti užklausą
+                        </a>
+                    </p>
+                    <p class="EN disabled">
+                        This program is tailored for everyone, starting from the
+                        beginner to a professional athlete <br />
+                        <a class="EN disabled form-link" href="#form-H1-en"
+                            >Send an inquiry
+                        </a>
+                    </p>
+                    <p class="RU disabled">
+                        Это приложение рассчитано на всех, будь то первые шаги
+                        человека в тренажерном зале или представитель высшего
+                        спортивного мастерства. <br />
+                        <a class="RU disable form-link" href="#form-H1-ru"
+                            >Oтправить слышит
+                        </a>
+                    </p>
+                </div>
+            </div>
 
-<!-- *********** KAINOS LT ************-->
-<section class="pricess container LT languageVisible" > 
-    <h1>kainos <span id="pricess-H1-lt"> </span></h1>  
-    <div class="kainos">
-        <div class="box-item-left">
-            <h2>Abonementai</h2>
-            <p class="padding-p">Dėmesio!  Norint lankyti klubą būtina įsigyti abonementą ir asmenines treniruotes su treneriu/kineziterapeutu</p>
-            <ul>
-                <li class="listItem" >3 mėn. – 199 € (66.33€/mėn)</li>
-                <li class="listItem" >6 mėn. – 329 € (54,83€/mėn)</li>
-                <li class="listItem" >12 mėn. – 549 € (45,75€/mėn)</li>
-                <li class="listItem" >1 dienos - ši paslauga neteikiama</li>
-            </ul>
-        </div>
-        <div class="box-item-right">
-            <h2>Treniruotės</h2>
-            <p class="padding-p">Individualios treniruotės fiziniam pasirengimui <br> bei kineziterapijai su treniruokliais:</p>
-            <ul>
-                <li class="listItem" >nuo 30 € </li>
-                <!-- <li class="listItem" >Vienkartinis apsilankymas - ši paslauga neteikiama</li> -->
-            </ul>
-            <p class="padding-p">Body Control Pilates individualios treniruotės:</p>
-            <ul>
-                <!-- <li>10 treniruočių – 500 €</li> -->
-                <li>nuo 50 €</li>
-            </ul>
-        </div>
-    </div>
-</section>
+            <div class="programu-blokas">
+                <div class="prog-div">
+                    <h2 class="LT languageVisible">
+                        kūno svorio ir apimčių korekcija
+                    </h2>
+                    <h2 class="EN disabled">
+                        correction of body weight and volume
+                    </h2>
+                    <h2 class="RU disabled">коррекция массы тела и объема</h2>
 
-<!-- *********** kainos EN ************-->
+                    <img
+                        src="images/mainSlide/slide3.JPG"
+                        alt="sporto sale su iranga"
+                        class="programos-img"
+                    />
+                    <p class="LT languageVisible">
+                        Ši programa leidžia koreguoti kūno apimtis,
+                        atsižvelgiant į sportuojančio pageidavimus ir
+                        vadovaujantis pagrindiniais sveikatinimo principais,
+                        žinoma ir derinant jam tinkamą dietą. <br />
+                        <a
+                            class="LT languageVisible form-link"
+                            href="#form-H1-lt"
+                            >Siųsti užklausą
+                        </a>
+                    </p>
+                    <p class="EN disabled">
+                        This program allows you to adjust the volume of the
+                        body, taking into account the wishes of the athlete and
+                        in accordance with the basic principles of health, of
+                        course, combining the right diet for him. <br />
+                        <a class="EN disabled form-link" href="#form-H1-en"
+                            >Send an inquiry
+                        </a>
+                    </p>
+                    <p class="RU disabled">
+                        Эта программа позволяет скорректировать объемы тела с
+                        учетом пожеланий спортсмена и в соответствии с основными
+                        принципами здоровья, конечно же, сочетая правильный для
+                        него режим питания. <br />
+                        <a class="RU disable form-link" href="#form-H1-ru"
+                            >Oтправить слышит
+                        </a>
+                    </p>
+                </div>
+                <div class="prog-div">
+                    <h2 class="LT languageVisible">
+                        body control pilates treniruotės
+                    </h2>
+                    <h2 class="EN disabled">body control pilates workouts</h2>
+                    <h2 class="RU disabled">
+                        тренировки по пилатесу с контролем тела
+                    </h2>
 
-<section class="pricess container EN disabled"> 
-    <h1>Prices <span id="pricess-H1-en"> </span></h1>  
-    <div class="kainos">
-        <div class="box-item-left">
-            <h2>Memberships</h2>
-            <p class="padding-p">Attention! To attend the club it is necessary to purchase a membership and personal workouts with a trainer</p>
-            <ul>
-                <li class="listItem" >3 months – 199 € (66.33€/month)</li>
-                <li class="listItem" >6 months – 329 € (54,83€/month)</li>
-                <li class="listItem" >12 months – 549 € (45,75€/month)</li>
-                <li class="listItem" >1 day - this service is not available</li>
-            </ul>
-        </div>
-        <div class="box-item-right">
-            <h2>workouts</h2>
-            <p class="padding-p">Individual workouts for physical fitness <br> and physiotherapy with exercise machines:</p>
-            <ul>
-                <li class="listItem" > from 30 € </li>
-                <!-- <li class="listItem" >1 time – this service is not available</li> -->
-            </ul>
-            <p class="padding-p">Body Control Pilates personal workouts</p>
-            <ul>
-                <!-- <li>10 times – 500 €</li> -->
-                <li > from 50 €  </li>
-            </ul>
-        </div>
-    </div>
-</section>
-<!-- *********** KAINOS Ru ************-->
-<section class="pricess container RU disabled"> 
-    <h1>Цены <span id="pricess-H1-ru"> </span></h1>  
-    <div class="kainos">
-        <div class="box-item-left">
-            <h2>Подписки</h2>
-            <p class="padding-p">Внимание! Для посещения клуба необходимо приобрести 
-                абонемент и персональное обучение у тренера / физиотерапевта</p>
-            <ul>
-                <li class="listItem" >3 месяца – 199 € (66.33€/месяц)</li>
-                <li class="listItem" >6 месяц – 329 € (54,83€/месяц)</li>
-                <li class="listItem" >12 месяц – 549 € (45,75€/месяц)</li>
-                <li class="listItem" >1 день - эта услуга недоступна</li>
-            </ul>
-        </div>
-        <div class="box-item-right">
-            <h2>Тренировки</h2>
-            <p class="padding-p">Индивидуальные тренировки для физической подготовки <br> и физиотерапия на тренажерах:</p>
-            <ul>
-                <li class="listItem" >от 30 €</li>
-                <!-- <li class="listItem" >1 тренировокa - эта услуга недоступна</li> -->
-            </ul>
-            <p class="padding-p">Индивидуальная тренировка Body Control Pilates:</p>
-            <ul>
-                <!-- <li>10 тренировок – 500 €</li> -->
-                <li >от 50 €</li>
-            </ul>
-        </div>
-    </div>
-</section>
+                    <img
+                        src="images/mainSlide/slide2.JPG"
+                        alt="sporto sale su iranga"
+                        class="programos-img"
+                    />
+                    <p class="LT languageVisible">
+                        Pilates metodas: Saugiai stiprina giliuosius raumenis,
+                        kūno balansą, ištvermę. Padeda pasiekti pusiausvyrą tarp
+                        lankstumo ir jėgos. Moko sukurti ryšį tarp kūno ir
+                        proto. Padeda koreguoti laikyseną, bei susigrąžinti
+                        natūralius judesius. <br />
+                        <a
+                            class="LT languageVisible form-link"
+                            href="#form-H1-lt"
+                            >Siųsti užklausą
+                        </a>
+                    </p>
+                    <p class="EN disabled">
+                        Pilates method: Safely strengthens deep muscles, body
+                        balance, endurance. Helps strike a balance between
+                        flexibility and strength. Teaches to create a connection
+                        between body and mind. Helps to adjust posture and
+                        regain natural movements. <br />
+                        <a class="EN disabled form-link" href="#form-H1-en"
+                            >Send an inquiry
+                        </a>
+                    </p>
+                    <p class="RU disabled">
+                        Метод пилатеса: безопасно укрепляет глубокие мышцы,
+                        баланс тела, выносливость. Помогает найти баланс между
+                        гибкостью и силой. Учит создавать связь между телом и
+                        разумом. Помогает скорректировать осанку и восстановить
+                        естественные движения. <br />
+                        <a class="RU disable form-link" href="#form-H1-ru"
+                            >Oтправить слышит
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
 
+        <!-- ***********GALERIJA ************-->
+        <section class="galery container" id="galery">
+            <h1 class="LT languageVisible">
+                <span id="galery-H1-lt"> </span> galerija
+            </h1>
+            <h1 class="EN disabled"><span id="galery-H1-en"> </span> galery</h1>
+            <h1 class="RU disabled">
+                <span id="galery-H1-ru"> </span> галерея
+            </h1>
 
+            <h2 class="LT languageVisible">Sporto salė</h2>
+            <h2 class="EN disabled">Gym</h2>
+            <h2 class="RU disabled">Спортзал</h2>
 
-<!-- *********** UZKLAUSOS FORMA LT ************  -->
-<section class="form container LT languageVisible" > 
-    <h1>NEDRĄSU PRADĖTI?<span id="form-H1-lt"> </span></h1>  
-    <p>Registruokites nemokamai konsultacijai</p>
-    <div id="uzklausosId" class="uzklausa">
-        <form id="Email-Collector" class="email-collector" action="https://formsubmit.co/info@fitlife.lt" method="POST">
-            <input id="firstNameId" name="firstName" type="text" required placeholder=" vardas"   required  > <br>
-            <input id="emailAddressId" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" type="email" required  placeholder="el. paštas"   required  ><br>
-            <textarea  id="messageTextId"  wrap="hard" name="message" type="text" placeholder="Jūsų žinutė iki 350 simbolių" maxlength="350" required ></textarea>          
-            <input type="hidden" name="_next" value="https://fitlife.lt/thanks.html">
-            <button class="send-btn" id="sendBtn" type="submit">Siųsti</button>
-        </form>
-    </div>
-</section>
+            <div class="gym-pics">
+                <!--***** PICTURES *******-->
 
-<!-- *********** UZKLAUSOS FORMA EN INQUIRY ************-->
-<section class="form container EN  disabled"> 
-    <h1>not sure how to start?<span id="form-H1-en"> </span></h1>  
-    <p>Sign up for a free consultation</p>
-    <div id="uzklausosId" class="uzklausa">
-        <form id="Email-Collector" class="email-collector" action="https://formsubmit.co/info@fitlife.lt" method="POST">
-            <input id="firstNameId" name="firstName" type="text" required placeholder="First name"   required  > <br>
-            <input id="emailAddressId" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" type="email" required  placeholder="email address"   required  ><br>
-            <textarea  id="messageTextId"  wrap="hard" name="message" type="text" placeholder="your message up to 350 letters" maxlength="350" required ></textarea>   
-            <input type="hidden" name="_next" value="https://fitlife.lt/thanks.html"> 
-            <button class="send-btn" id="sendBtn" type="submit">Send</button>
-        </form>
-    </div>
-</section>
+                <div
+                    class="gym-image-div carousel-item-visible triple-carousel-item-visible"
+                >
+                    <img
+                        src="images/sportoSale/1.jpg"
+                        alt="pagrindine sale su kinesi treniruokliu bei svoriais"
+                        class="gym-image-image"
+                    />
+                </div>
+                <div class="gym-image-div triple-carousel-item-visible">
+                    <img
+                        src="images/sportoSale/2.jpg"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
+                <div class="gym-image-div triple-carousel-item-visible">
+                    <img
+                        src="images/sportoSale/3.jpg"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
 
-<!-- *********** UZKLAUSOS FORMA ************-->
-<section class="form container RU disabled"> 
-    <h1>СМЕЛИ НАЧАТЬ?<span id="form-H1-ru"> </span></h1>  
-    <p>Запишитесь на бесплатную консультацию</p>
-    <div id="uzklausosId" class="uzklausa">
-        <form id="Email-Collector" class="email-collector" action="https://formsubmit.co/info@fitlife.lt" method="POST">
-            <input id="firstNameId" name="firstName" type="text" required placeholder="имя"   required  > <br>
-            <input id="emailAddressId" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" type="email" required  placeholder="Эл. почта"   required  ><br>
-            <textarea  id="messageTextId"  wrap="hard" name="message" type="text" placeholder="Ваше сообщение должно содержать до 350 символов." maxlength="350" required ></textarea>    
-            <input type="hidden" name="_next" value="https://fitlife.lt/thanks.html">
-            <button class="send-btn" id="sendBtn" type="submit">послать</button>
-        </form>
-    </div>
-</section>
+                <div class="gym-image-div">
+                    <img
+                        src="images/sportoSale/4.jpg"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
+                <div class="gym-image-div">
+                    <img
+                        src="images/sportoSale/5.jpg"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
+                <div class="gym-image-div">
+                    <img
+                        src="images/sportoSale/6.jpg"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
 
-<!-- *********** KONTAKTAI ************-->
-<section class="contacts container LT languageVisible" id="contacts">
-    <h1>kontaktai<span id="contacts-H1-lt"> </span></h1>
-    <div class="kontaktai">
-        <div class="box-item-left">
-            <h3>“SVEIKOS NUGAROS AKADEMIJA”<br> UAB</h3>
-            <p> Įmonės kodas: 305506905 <br>
-                PVM kodas: LT100013054114<br>
-                Raugyklos g. 15a LT-01140 Vilnius<br>
-                info@fitlife.lt<br></p> 
-            <a class="tel" href="tel:+37061699660">+37061699660</a>
-            <p> Atsiskaitomoji sąskaita <br> LT804010051005310773<br>
-            <a href="taisyklesLT.html">Duomenų tvarkymo taisyklės</a> <br></p>
-        </div>
-        <div class="box-item-right">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2307.0031402523687!2d25.277968699951334!3d54.674373038304076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd946af8b57ed9%3A0x240a9e6f66e1a380!2sRaugyklos%20g.%2015a%2C%20Vilnius%2001140!5e0!3m2!1sen!2slt!4v1635147686265!5m2!1sen!2slt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </div>
-</section>
+                <div class="gym-image-div">
+                    <img
+                        src="images/sportoSale/7.jpg"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
+                <div class="gym-image-div">
+                    <img
+                        src="images/sportoSale/8.jpg"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
 
-<!-- *********** KONTAKTAI EN ************-->
-<section class="contacts container EN disabled" id="contacts">
-    <h1>contacts<span id="contacts-H1-en"> </span></h1>
-    <div class="kontaktai">
-        <div class="box-item-left">
-            <h3>“SVEIKOS NUGAROS AKADEMIJA”<br> UAB</h3>
-            <p> Company code: 305506905 <br>
-                VAT code: LT100013054114<br>
-                Raugyklos g. 15a LT-01140 Vilnius<br>
-                info@fitlife.lt<br></p> 
-                <a class="tel" href="tel:+37061699660">+37061699660</a>
-                <p> Bank account (IBAN) <br>
-                    LT804010051005310773<br>
-                <a href="taisyklesUK.html">Data processing rules</a> <br></p>
-        </div>       
-        <div class="box-item-right">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2307.0031402523687!2d25.277968699951334!3d54.674373038304076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd946af8b57ed9%3A0x240a9e6f66e1a380!2sRaugyklos%20g.%2015a%2C%20Vilnius%2001140!5e0!3m2!1sen!2slt!4v1635147686265!5m2!1sen!2slt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </div>
-</section>
+                <div class="gym-image-div">
+                    <img
+                        src="images/sportoSale/legPress.JPG"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
 
+                <div class="gym-image-div">
+                    <img
+                        src="images/sportoSale/steperiai.JPG"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
 
-<!-- *********** KONTAKTAI RU ************-->
-<section class="contacts container RU disabled" id="contacts">
-    <h1>контакты<span id="contacts-H1-ru"> </span></h1>
-    <div class="kontaktai">
-        <div class="box-item-left">
-            <h3>“SVEIKOS NUGAROS AKADEMIJA”<br> UAB</h3>
-            <p> Код компании: 305506905 <br>
-                Код НДС: LT100013054114<br>
-                Raugyklos g. 15a LT-01140 Vilnius<br>
-                info@fitlife.lt<br></p> 
-                <a class="tel" href="tel:+37061699660">+37061699660</a>
+                <div class="gym-image-div">
+                    <img
+                        src="images/sportoSale/9.jpg"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
 
-                <p> банковский счетa <br>
-                    LT804010051005310773<br>
-                   <a href="taisyklesRU.html">Правила обработки данных</a> <br></p>
-        </div>
-        <div class="box-item-right">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2307.0031402523687!2d25.277968699951334!3d54.674373038304076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd946af8b57ed9%3A0x240a9e6f66e1a380!2sRaugyklos%20g.%2015a%2C%20Vilnius%2001140!5e0!3m2!1sen!2slt!4v1635147686265!5m2!1sen!2slt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="gym-image-div">
+                    <img
+                        src="images/sportoSale/10.jpg"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
 
-        </div>
-    </div>
-</section>
+                <div class="gym-image-div">
+                    <img
+                        src="images/sportoSale/irklavimas1.JPG"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
+                <div class="gym-image-div">
+                    <img
+                        src="images/sportoSale/irklavimas2.JPG"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
 
+                <div class="gym-image-div">
+                    <img
+                        src="images/sportoSale/takelisIrDviratis.JPG"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
 
-    <footer class="main-footer container">
-        <p> © 2021 UAB "Sveikos nugaros akademija" </p>
-        <a rel="noopener" href="https://www.facebook.com/FitLife.lt/?hc_ref=SEARCH" target="_blank"> <img  src="images/general/Facebooklogo2021.png" alt="faceboog logo icon" ></a>  
-    </footer>
+                <div class="gym-image-div">
+                    <img
+                        src="images/sportoSale/elipsiniai1.JPG"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
+                <div class="gym-image-div">
+                    <img
+                        src="images/sportoSale/elipsiniai2.JPG"
+                        alt="sporto sale su iranga"
+                        class="gym-image-image"
+                    />
+                </div>
 
-     <script src="script.js"></script>
-    
-</body>
+                <!--***** MODAL PROTOTYPE *******-->
+                <div class="g-Modal" id="gModal">
+                    <!--*** modals**-->
+                    <!-- <div class="gmodal-content">   // modalDiv 
+                     <img src="images/1.jpg" > // pics
+                    <div class= "carousel-actions" >  // buttonDiv
+                        <button id="carousel-button-prev" aria-label="Previous Slide"><</button>  // buttonNext
+                        <button id="carousel-button-next" aria-label="Next Slide">></button> // buttonPrev
+                        </div> 
+                    <span class="gclose">&times;</span> // spans
+                    </div> -->
+                </div>
 
+                <!--***** BUTTONS *******-->
+                <div class="carousel-actions single-slide-btn">
+                    <button
+                        id="carousel-button-prev"
+                        aria-label="Previous Slide"
+                    >
+                        <
+                    </button>
+                    <button id="carousel-button-next" aria-label="Next Slide">
+                        >
+                    </button>
+                </div>
+
+                <div class="carousel-3-actions slide-3-btn">
+                    <button
+                        id="carousel-3-button1-prev"
+                        aria-label="Previous Slide"
+                    >
+                        <
+                    </button>
+                    <button
+                        id="carousel-3-button1-next"
+                        aria-label="Next Slide"
+                    >
+                        >
+                    </button>
+                </div>
+            </div>
+
+            <h2>
+                <span class="bodyControl"> body control</span> <br /><span
+                    class="bodyControlLarge"
+                >
+                    pilates</span
+                >
+                <span class="bodyControlSmall">r </span>
+            </h2>
+
+            <div class="pilates-pics">
+                <div
+                    class="pil-image-div carousel-item-visible triple-carousel-item-visible"
+                >
+                    <img
+                        src="images/pilatesStudija/pilSlide1.JPG"
+                        alt="pilates sale su iranga"
+                        class="pil-image-image"
+                    />
+                </div>
+                <div class="pil-image-div triple-carousel-item-visible">
+                    <img
+                        src="images/pilatesStudija/pilSlide2.JPG"
+                        alt="pilates sale su iranga"
+                        class="pil-image-image"
+                    />
+                </div>
+                <div class="pil-image-div triple-carousel-item-visible">
+                    <img
+                        src="images/pilatesStudija/pil13.jpg"
+                        alt="pilates sale su iranga"
+                        class="pil-image-image"
+                    />
+                </div>
+
+                <div class="pil-image-div">
+                    <img
+                        src="images/pilatesStudija/pil11.jpg"
+                        alt="pilates sale su iranga"
+                        class="pil-image-image"
+                    />
+                </div>
+                <div class="pil-image-div">
+                    <img
+                        src="images/pilatesStudija/pil12.jpg"
+                        alt="pilates sale su iranga"
+                        class="pil-image-image"
+                    />
+                </div>
+
+                <div class="carousel-actions single-slide-btn">
+                    <button
+                        id="carousel-button2-prev"
+                        aria-label="Previous Slide"
+                    >
+                        <
+                    </button>
+                    <button id="carousel-button2-next" aria-label="Next Slide">
+                        >
+                    </button>
+                </div>
+
+                <div class="carousel-3-actions slide-3-btn">
+                    <button
+                        id="carousel-3-button2-prev"
+                        aria-label="Previous Slide"
+                    >
+                        <
+                    </button>
+                    <button
+                        id="carousel-3-button2-next"
+                        aria-label="Next Slide"
+                    >
+                        >
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- *********** KAINOS LT ************-->
+        <section class="pricess container LT languageVisible">
+            <h1>kainos <span id="pricess-H1-lt"> </span></h1>
+            <p class="padding-p">
+                <strong>Dėmesio! </strong> Norint lankyti klubą būtina įsigyti
+                abonementą ir asmenines treniruotes su treneriu kineziterapeutu
+            </p>
+            <div class="kainos">
+                <div class="box-item-left">
+                    <h2>Abonementai</h2>
+                    <ul>
+                        <li class="listItem">3 mėn. – 199 € (66.33€/mėn)</li>
+                        <li class="listItem">6 mėn. – 329 € (54,83€/mėn)</li>
+                        <li class="listItem">12 mėn. – 549 € (45,75€/mėn)</li>
+                        <li class="listItem">
+                            1 dienos - ši paslauga neteikiama
+                        </li>
+                    </ul>
+                </div>
+                <div class="box-item-right">
+                    <h2>Treniruotės</h2>
+                    <ul>
+                        <li class="listItem">
+                            <p class="padding-p">
+                                Fiziniam pasirengimui bei kineziterapijai:
+                            </p>
+                        </li>
+                        <li class="listItem">nuo 30 €</li>
+                        <li class="listItem">Body Control Pilates:</li>
+                        <li class="listItem">nuo 50 €</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- *********** kainos EN ************-->
+
+        <section class="pricess container EN disabled">
+            <h1>Prices <span id="pricess-H1-en"> </span></h1>
+            <p class="padding-p">
+                <strong>Attention! </strong> To attend the club it is necessary
+                to purchase a membership and personal workouts with a trainer
+            </p>
+            <div class="kainos">
+                <div class="box-item-left">
+                    <h2>Memberships</h2>
+                    <ul>
+                        <li class="listItem">
+                            3 months – 199 € (66.33€/month)
+                        </li>
+                        <li class="listItem">
+                            6 months – 329 € (54,83€/month)
+                        </li>
+                        <li class="listItem">
+                            12 months – 549 € (45,75€/month)
+                        </li>
+                        <li class="listItem">
+                            1 day - this service is not available
+                        </li>
+                    </ul>
+                </div>
+                <div class="box-item-right">
+                    <h2>workouts</h2>
+                    <ul>
+                        <li class="listItem">
+                            <p class="padding-p">
+                                Workouts for physical fitness and physiotherapy:
+                            </p>
+                        </li>
+                        <li class="listItem">from 30 €</li>
+                        <li class="listItem">
+                            <p class="padding-p">Body Control Pilates:</p>
+                        </li>
+                        <li>from 50 €</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- *********** KAINOS Ru ************-->
+        <section class="pricess container RU disabled">
+            <h1>Цены <span id="pricess-H1-ru"> </span></h1>
+            <p class="padding-p">
+                <strong>Внимание! </strong> Для посещения клуба необходимо
+                приобрести абонемент и персональное обучение у тренера
+                физиотерапевта
+            </p>
+            <div class="kainos">
+                <div class="box-item-left">
+                    <h2>Подписки</h2>
+                    <ul>
+                        <li class="listItem">
+                            3 месяца – 199 € (66.33€/месяц)
+                        </li>
+                        <li class="listItem">6 месяц – 329 € (54,83€/месяц)</li>
+                        <li class="listItem">
+                            12 месяц – 549 € (45,75€/месяц)
+                        </li>
+                        <li class="listItem">1 день - эта услуга недоступна</li>
+                    </ul>
+                </div>
+                <div class="box-item-right">
+                    <h2>Тренировки</h2>
+                    <ul>
+                        <li class="listItem">
+                            <p class="padding-p">
+                                Tренировки для физической подготовки и
+                                физиотерапия:
+                            </p>
+                        </li>
+                        <li class="listItem">от 30 €</li>
+                        <li class="listItem">
+                            <p class="padding-p">Body Control Pilates:</p>
+                        </li>
+                        <li>от 50 €</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- *********** UZKLAUSOS FORMA LT ************  -->
+        <section class="form container LT languageVisible">
+            <h1>NEDRĄSU PRADĖTI?<span id="form-H1-lt"> </span></h1>
+            <p>Registruokites nemokamai konsultacijai</p>
+            <div id="uzklausosId" class="uzklausa">
+                <form
+                    id="Email-Collector"
+                    class="email-collector"
+                    action="https://formsubmit.co/info@fitlife.lt"
+                    method="POST"
+                >
+                    <input
+                        id="firstNameId"
+                        name="firstName"
+                        type="text"
+                        required
+                        placeholder=" vardas"
+                        required
+                    />
+                    <br />
+                    <input
+                        id="emailAddressId"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        name="email"
+                        type="email"
+                        required
+                        placeholder="el. paštas"
+                        required
+                    /><br />
+                    <textarea
+                        id="messageTextId"
+                        wrap="hard"
+                        name="message"
+                        type="text"
+                        placeholder="Jūsų žinutė iki 350 simbolių"
+                        maxlength="350"
+                        required
+                    ></textarea>
+                    <input
+                        type="hidden"
+                        name="_next"
+                        value="https://fitlife.lt/thanks.html"
+                    />
+                    <button class="send-btn" id="sendBtn" type="submit">
+                        Siųsti
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- *********** UZKLAUSOS FORMA EN INQUIRY ************-->
+        <section class="form container EN disabled">
+            <h1>not sure how to start?<span id="form-H1-en"> </span></h1>
+            <p>Sign up for a free consultation</p>
+            <div id="uzklausosId" class="uzklausa">
+                <form
+                    id="Email-Collector"
+                    class="email-collector"
+                    action="https://formsubmit.co/info@fitlife.lt"
+                    method="POST"
+                >
+                    <input
+                        id="firstNameId"
+                        name="firstName"
+                        type="text"
+                        required
+                        placeholder="First name"
+                        required
+                    />
+                    <br />
+                    <input
+                        id="emailAddressId"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        name="email"
+                        type="email"
+                        required
+                        placeholder="email address"
+                        required
+                    /><br />
+                    <textarea
+                        id="messageTextId"
+                        wrap="hard"
+                        name="message"
+                        type="text"
+                        placeholder="your message up to 350 letters"
+                        maxlength="350"
+                        required
+                    ></textarea>
+                    <input
+                        type="hidden"
+                        name="_next"
+                        value="https://fitlife.lt/thanks.html"
+                    />
+                    <button class="send-btn" id="sendBtn" type="submit">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- *********** UZKLAUSOS FORMA ************-->
+        <section class="form container RU disabled">
+            <h1>СМЕЛИ НАЧАТЬ?<span id="form-H1-ru"> </span></h1>
+            <p>Запишитесь на бесплатную консультацию</p>
+            <div id="uzklausosId" class="uzklausa">
+                <form
+                    id="Email-Collector"
+                    class="email-collector"
+                    action="https://formsubmit.co/info@fitlife.lt"
+                    method="POST"
+                >
+                    <input
+                        id="firstNameId"
+                        name="firstName"
+                        type="text"
+                        required
+                        placeholder="имя"
+                        required
+                    />
+                    <br />
+                    <input
+                        id="emailAddressId"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        name="email"
+                        type="email"
+                        required
+                        placeholder="Эл. почта"
+                        required
+                    /><br />
+                    <textarea
+                        id="messageTextId"
+                        wrap="hard"
+                        name="message"
+                        type="text"
+                        placeholder="Ваше сообщение должно содержать до 350 символов."
+                        maxlength="350"
+                        required
+                    ></textarea>
+                    <input
+                        type="hidden"
+                        name="_next"
+                        value="https://fitlife.lt/thanks.html"
+                    />
+                    <button class="send-btn" id="sendBtn" type="submit">
+                        послать
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- *********** KONTAKTAI ************-->
+        <section class="contacts container LT languageVisible" id="contacts">
+            <h1>kontaktai<span id="contacts-H1-lt"> </span></h1>
+            <div class="kontaktai">
+                <div class="box-item-left">
+                    <h3>
+                        “SVEIKOS NUGAROS AKADEMIJA”<br />
+                        UAB
+                    </h3>
+                    <p>
+                        Įmonės kodas: 305506905 <br />
+                        PVM kodas: LT100013054114<br />
+                        Raugyklos g. 15a LT-01140 Vilnius<br />
+                        info@fitlife.lt<br />
+                    </p>
+                    <a class="tel" href="tel:+37061699660">+37061699660</a>
+                    <p>
+                        Atsiskaitomoji sąskaita <br />
+                        LT804010051005310773<br />
+                        <a href="taisyklesLT.html"
+                            >Duomenų tvarkymo taisyklės</a
+                        >
+                        <br />
+                    </p>
+                </div>
+                <div class="box-item-right">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2307.0031402523687!2d25.277968699951334!3d54.674373038304076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd946af8b57ed9%3A0x240a9e6f66e1a380!2sRaugyklos%20g.%2015a%2C%20Vilnius%2001140!5e0!3m2!1sen!2slt!4v1635147686265!5m2!1sen!2slt"
+                        width="400"
+                        height="300"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- *********** KONTAKTAI EN ************-->
+        <section class="contacts container EN disabled" id="contacts">
+            <h1>contacts<span id="contacts-H1-en"> </span></h1>
+            <div class="kontaktai">
+                <div class="box-item-left">
+                    <h3>
+                        “SVEIKOS NUGAROS AKADEMIJA”<br />
+                        UAB
+                    </h3>
+                    <p>
+                        Company code: 305506905 <br />
+                        VAT code: LT100013054114<br />
+                        Raugyklos g. 15a LT-01140 Vilnius<br />
+                        info@fitlife.lt<br />
+                    </p>
+                    <a class="tel" href="tel:+37061699660">+37061699660</a>
+                    <p>
+                        Bank account (IBAN) <br />
+                        LT804010051005310773<br />
+                        <a href="taisyklesUK.html">Data processing rules</a>
+                        <br />
+                    </p>
+                </div>
+                <div class="box-item-right">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2307.0031402523687!2d25.277968699951334!3d54.674373038304076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd946af8b57ed9%3A0x240a9e6f66e1a380!2sRaugyklos%20g.%2015a%2C%20Vilnius%2001140!5e0!3m2!1sen!2slt!4v1635147686265!5m2!1sen!2slt"
+                        width="400"
+                        height="300"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- *********** KONTAKTAI RU ************-->
+        <section class="contacts container RU disabled" id="contacts">
+            <h1>контакты<span id="contacts-H1-ru"> </span></h1>
+            <div class="kontaktai">
+                <div class="box-item-left">
+                    <h3>
+                        “SVEIKOS NUGAROS AKADEMIJA”<br />
+                        UAB
+                    </h3>
+                    <p>
+                        Код компании: 305506905 <br />
+                        Код НДС: LT100013054114<br />
+                        Raugyklos g. 15a LT-01140 Vilnius<br />
+                        info@fitlife.lt<br />
+                    </p>
+                    <a class="tel" href="tel:+37061699660">+37061699660</a>
+
+                    <p>
+                        банковский счетa <br />
+                        LT804010051005310773<br />
+                        <a href="taisyklesRU.html">Правила обработки данных</a>
+                        <br />
+                    </p>
+                </div>
+                <div class="box-item-right">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2307.0031402523687!2d25.277968699951334!3d54.674373038304076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd946af8b57ed9%3A0x240a9e6f66e1a380!2sRaugyklos%20g.%2015a%2C%20Vilnius%2001140!5e0!3m2!1sen!2slt!4v1635147686265!5m2!1sen!2slt"
+                        width="400"
+                        height="300"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer container">
+            <p>© 2022 UAB "Sveikos nugaros akademija"</p>
+            <a
+                rel="noopener"
+                href="https://www.facebook.com/FitLife.lt/?hc_ref=SEARCH"
+                target="_blank"
+            >
+                <img
+                    src="images/general/Facebooklogo2021.png"
+                    alt="faceboog logo icon"
+            /></a>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>
